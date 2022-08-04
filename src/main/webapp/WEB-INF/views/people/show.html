@@ -5,8 +5,14 @@
     <title>Человек</title>
 </head>
 <body>
+<p>Name:</p>
 <p th:text="${person.getName()}">V1ALUE</p>
+<p>Id:</p>
 <p th:text="${person.getId()}">V1ALUE</p>
+<p>Age:</p>
+<p th:text="${person.getAge()}">V1ALUE</p>
+<p>Email:</p>
+<p th:text="${person.getEmail()}">V1ALUE</p>
 
 <a th:href="@{/people/{id}/edit(id=${person.getId()})}">Edit!</a>
 
